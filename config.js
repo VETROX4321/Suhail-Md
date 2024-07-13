@@ -91,7 +91,7 @@ module.exports = {
 
 
   WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "public",
-  LANG: ( process.env.THEME ||  "SUHAIL"  ).toUpperCase(),
+  LANG: ( process.env.THEME ||  "KOUSHIK"  ).toUpperCase(),
 
 
 
@@ -100,7 +100,7 @@ module.exports = {
 
 
 global.ELEVENLAB_API_KEY = process.env.ELEVENLAB_API_KEY || "";
-global.aitts_Voice_Id = process.env.AITTS_ID|| "37";
+global.aitts_Voice_Id = proceuv.AITTS_ID|| "37";
 
 
 
@@ -122,8 +122,8 @@ global.aitts_Voice_Id = process.env.AITTS_ID|| "37";
 
 
 
-global.rank = "updated"
-global.isMongodb = false; 
+global.rank = "null"
+global.isMongodb = true; 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename}'`);delete require.cache[file];	require(file); })
  
