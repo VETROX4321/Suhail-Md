@@ -90,7 +90,7 @@ module.exports = {
   HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
 
 
-  WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "public",
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE|| "private",
   LANG: ( process.env.THEME ||  "KOUSHIK"  ).toUpperCase(),
 
 
@@ -122,8 +122,8 @@ global.aitts_Voice_Id = proceuv.AITTS_ID|| "37";
 
 
 
-global.rank = "null"
-global.isMongodb = true; 
+global.rank = "updated"
+global.isMongodb = false; 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename}'`);delete require.cache[file];	require(file); })
  
